@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.interfazprincipal-oscuro {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-position: center center;
+    background-size: cover;
+}
+
+.interfazprincipal {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../IMG/fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.contenido-principal {
+    position: absolute;
+    top: 29%;
+    width: 100%;
+    color: white;
+}
+
+.contenido-principal .bienvenido {
+    margin-left: 25%;
+    position: absolute;
+    display: inline;
+    text-transform: uppercase;
+}
+
+.bienvenido h2 {
+    font-size: 50px;
+    color: beige;
+    text-transform: uppercase;
+}
+
+.datos-usuarios {
+    margin-left: 50%;
+    position: absolute;
+    display: inline;
+    text-transform: uppercase;
+}
+
+.datos-usuarios h2 {
+    font-size: 50px;
+    color: beige;
+    text-transform: uppercase;
+}
+
+.btniniciar button {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 45%;
+    width: 10%;
+    height: 50px;
+    border: 1px solid green;
+    border-radius: 25px;
+    background: transparent;
+    color: beige;
+}
+
+.btn-cerrar {
+    position: absolute;
+    transform: translateY(-160px);
+    margin-left: 10px;
+}
+
+.btn-cerrar .btn {
+    border-radius: 25px;
+    background-color: transparent;
+}
+
+.btn-cerrar .btn a {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+.btn-cerrar .btn:hover {
+    background-color: #d9534f;
+}
+
+.btn-cerrar .btn:hover a {
+    color: white;
+}
+
+.btniniciar button:hover {
+    cursor: pointer;
+    background: green;
+}
+
+.modal-participantes {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+    z-index: -1;
+    opacity: 0;
+    animation: all 1s ease-in-out;
+}
+
+.modal-participantes-activo {
+    z-index: 1;
+    opacity: 1;
+}
+
+/*Estilos del formulario*/
+
+.contenedor-form {
+    padding-top: 50px;
+    height: 65%;
+    width: 40%;
+    position: absolute;
+    background: white;
+    margin-left: 32%;
+    margin-top: 10%;
+    -webkit-box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.75);
+
+    border-radius: 25px;
+}
+
+.inputfield-nombre {
+    margin-left: 35%;
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+
+.inputfield-lugar {
+    margin-left: 35%;
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+
+.inputfield-fecha {
+    margin-left: 35%;
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+
+.inputfield-part {
+    margin-left: 35%;
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+
+.inputfield-vuelta {
+    margin-left: 35%;
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+
+
+
+.inputfield-nombre input[type="text"],
+.inputfield-lugar input[type="text"],
+.inputfield-part input[type="number"],
+.inputfield-vuelta input[type="number"] {
+    position: absolute;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+    color: black;
+    width: auto;
+    transition: 0.5s;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-outer-spin-button,
+input[type="date"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"],
+input[type="date"] {
+    -moz-appearance: textfield;
+}
+
+.inputfield-nombre label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: dimgrey;
+    pointer-events: none;
+    transition: 0.5s;
+    display: block;
+    transform: translateY(0px);
+}
+
+.inputfield-lugar label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: dimgrey;
+    pointer-events: none;
+    transition: 0.5s;
+    display: block;
+    transform: translateY(0px);
+}
+
+.inputfield-fecha label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+    pointer-events: none;
+    transition: 0.5s;
+    display: block;
+    transform: translateY(-30px);
+}
+
+.inputfield-part label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: dimgrey;
+    pointer-events: none;
+    transition: 0.5s;
+    display: block;
+    transform: translateY(0px);
+}
+
+.inputfield-vuelta label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: dimgrey;
+    pointer-events: none;
+    transition: 0.5s;
+    display: block;
+    transform: translateY(0px);
+}
+
+.inputfield-nombre input[type="text"]:focus ~ label,
+.inputfield-nombre input[type="text"]:valid ~ label,
+.inputfield-lugar input[type="text"]:focus ~ label,
+.inputfield-lugar input[type="text"]:valid ~ label,
+.inputfield-part input[type="number"]:focus ~ label,
+.inputfield-part input[type="number"]:valid ~ label,
+.inputfield-vuelta input[type="number"]:focus ~ label,
+.inputfield-vuelta input[type="number"]:valid ~ label {
+    transform: translateY(-30px);
+}
+
+.inputfield-nombre input[type="text"]:valid,
+.inputfield-nombre input[type="text"]:focus,
+.inputfield-lugar input[type="text"]:valid,
+.inputfield-lugar input[type="text"]:focus,
+.inputfield-part input[type="number"]:valid,
+.inputfield-part input[type="number"]:focus,
+.inputfield-vuelta input[type="number"]:valid,
+.inputfield-vuelta input[type="number"]:focus .inputfield-fecha input[type="date"]:valid,
+.inputfield-fecha input[type="date"]:focus {
+    border: solid 0.5px green;
+}
+
+.inputfield-fecha input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+.inputfield-fecha input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+.inputfield-fecha input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #95a5a6;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 18px;
+    border: 1px solid #ecf0f1;
+    background: #ecf0f1;
+    padding: 5px;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+.inputfield-fecha input[type="date"]:focus {
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+.inputfield-fecha input[type="date"]:valid {
+    color: green;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+
+.btn-check {
+    position: absolute;
+    transform: translateY(-40px);
+    margin-left: 80%;
+    font-size: 25px;
+    border: 1px solid #27ae60;
+    border-radius: 50%;
+    padding: 10px;
+    background: transparent;
+    cursor: pointer
+}
+
+.btn-check:hover {
+    background: #27ae60;
+    color: white;
+}
+
+.btn-x {
+    position: absolute;
+    transform: translateY(-40px);
+    margin-left: 68%;
+    font-size: 25px;
+    border: 1px solid #c0392b;
+    border-radius: 50%;
+    padding: 10px 16px;
+    background: transparent;
+    cursor: pointer
+}
+
+.btn-x:hover {
+    background: #c0392b;
+    color: white;
+}

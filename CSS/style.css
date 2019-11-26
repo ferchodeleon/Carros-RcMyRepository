@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#body {
+    background: #204862;
+}
+
+.contenedor h3 {
+    margin: 5px 0px 5px 0px;
+}
+
+input .boton {
+    margin-top: 5px;
+}
+
+.boton {
+    margin-top: 10px;
+    padding: 7px 30px;
+    font-size: 16px;
+    border: 1px solid #204862;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #000;
+    background-color: #D6CDCA;
+}
+
+.boton:hover {
+    background: #204862;
+    color: #fff;
+}
+
+.form-registro {
+    width: 98%;
+    max-width: 500PX;
+    margin: auto;
+    background: white;
+    border-radius: 7px;
+}
+
+.titu {
+    background: deepskyblue;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom: 5px solid crimson;
+}
+
+.contenedor {
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenedor input {
+    margin: 0 0 15px 0;
+    padding: 5px 0;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+
+.input-100 {
+    width: 100%;
+}
+
+.input-70 {
+    width: 80%;
+    margin: auto;
+    align-items: unset;
+}
+
+.input-48 {
+    width: 48%;
+}
+
+.input-50 {
+    width: 50%;
+    padding: 5px 0;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.input-80 {
+    width: 80%;
+    margin-top: 20px;
+    padding: 5px 0;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.input-60 {
+    width: 60%;
+    margin-top: 20px;
+    padding: 5px 0;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+/**********************************************************************	
+*******															*******
+*******															*******
+*******			INICIO MODIFICACIÓN FORMULARIO DE LOGIN			*******
+*******															*******
+*******															*******
+**********************************************************************/
+
+.form-login {
+    padding-top: 5%;
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.form-login h3 {
+    margin: 0px 0 5px 0;
+    font-size: 30px;
+}
+
+/**********************************************************************	
+*******															*******
+*******															*******
+*******		INICIO MODIFICACIÓN PAGINA CONTADOR DE VEHÍCULOS	*******
+*******															*******
+*******															*******
+**********************************************************************/
+
+/*.containerConteoVehiculos {
+	background: url("../IMG/backgroundConteo.jpg") no-repeat center top ;
+}*/
+
+.containerConteoVehiculos {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url(../IMG/IMAGEN2.jpg); */
+}
+
+.containerConteoVehiculos .formularioConteoVehiculos {
+    height: 200px;
+}
+
+/**********************************************************************	
+*******															*******
+*******															*******
+*******				INICIO MODIFICACIÓN PAGINA CARRERA			*******
+*******															*******
+*******															*******
+**********************************************************************/
+
+.bottonDetener {
+    display: none;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+#bottonArrancar {
+    display: none;
+}
+
+#bottonMostrar {
+    display: none;
+}
+
+#minutos,
+#dosPuntos,
+#segundos,
+#mostrarm,
+#mostrars,
+#dosPuntoss,
+#btnReload {
+    display: none;
+}
+
+#clicks {
+    max-width: 500px;
+}
+
+#clicks div {
+    padding: 5px;
+}
+
+/******		Style carrera para tener en cuenta		******/
+
+.btn-success {
+    width: 100px;
+    border-radius: 100px;
+}
+
+.btn-info {
+    width: 100px;
+    border-radius: 100px;
+}
+
+.btn-danger {
+    width: 100px;
+    border-radius: 100px;
+}
+
+.jumbotron {
+    background-color: #000;
+    color: #FFFF00;
+    font-family: 'Bauhaus 93';
+}
+
+.letra {
+    font-size: 50px;
+}
+
+.backgroundFormCarrera {
+    background: url(/IMG/IMAGEN3.png) no-repeat fixed center;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+.btnvolver {
+    margin-left: 10px;
+}
+
+.btnvolver button {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #27ae60;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.btnvolver button a {
+    color: black;
+    text-decoration: none;
+}
+
+.btnvolver button:hover a {
+    color: #27ae60;
+    text-decoration: none;
+}
+
+/*****		Cierre de style carrera de tener en cuenta		******/
